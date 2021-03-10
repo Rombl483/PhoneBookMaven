@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>PhoneBookMaven</display-name>
+
+  <servlet>
+    <servlet-name>getAllContactsServlet</servlet-name>
+    <servlet-class>ru.academits.servlet.GetAllContactsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AddContactsServlet</servlet-name>
+    <servlet-class>ru.academits.servlet.AddContactServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RemoveContactsServlet</servlet-name>
+    <servlet-class>ru.academits.servlet.RemoveContactServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RemoveSelectedContactsServlet</servlet-name>
+    <servlet-class>ru.academits.servlet.RemoveSelectedContactsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GetFilteredContactsServlet</servlet-name>
+    <servlet-class>ru.academits.servlet.GetFilteredContactsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>getAllContactsServlet</servlet-name>
+    <url-pattern>/phonebook/get/all</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetFilteredContactsServlet</servlet-name>
+    <url-pattern>/phonebook/get</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AddContactsServlet</servlet-name>
+    <url-pattern>/phonebook/add</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RemoveContactsServlet</servlet-name>
+    <url-pattern>/phonebook/remove</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RemoveSelectedContactsServlet</servlet-name>
+    <url-pattern>/phonebook/remove/selected</url-pattern>
+  </servlet-mapping>
+</web-app>

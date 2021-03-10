@@ -1,0 +1,12 @@
+ru\academits\model\Contact.class
+ru\academits\servlet\GetFilteredContactsServlet.class
+ru\academits\coverter\ContactConverter.class
+ru\academits\servlet\AddContactServlet.class
+ru\academits\servlet\RemoveContactServlet.class
+ru\academits\servlet\RemoveSelectedContactsServlet.class
+ru\academits\service\ContactService.class
+ru\academits\coverter\ContactValidationConverter.class
+ru\academits\dao\ContactDao.class
+ru\academits\PhoneBook.class
+ru\academits\service\ContactValidation.class
+ru\academits\servlet\GetAllContactsServlet.class
